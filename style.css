@@ -1,0 +1,179 @@
+@font-face {
+  font-family: 'SequelSans';
+  src: url('SSMediumDisp.woff') format('woff');
+  src: url('SSMediumDisp.ttf') format('truetype');
+  src: url('SSMediumDisp.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SequelSans';
+  src: url('SSBookDisp.woff') format('woff');
+  src: url('SSBookDisp.ttf') format('truetype');
+  src: url('SSBookDisp.otf') format('opentype');
+  font-weight: lighter;
+  font-style: oblique;
+}
+@font-face{
+  font-family: 'IntervalSansPro';
+  src: url('ISPSemiBold.otf') format('opentype');
+  src: url('ISPSemiBold.ttf') format('truetype');
+  src: url('ISPSemiBold.woff') format('woff');
+  font-weight:bold;
+  font-style:oblique;
+}
+@font-face{
+  font-family: 'IntervalSansPro';
+  src: url('ISPRegular.otf') format('opentype');
+  src: url('ISPRegular.ttf') format('truetype');
+  src: url('ISPRegular.woff') format('woff');
+  font-weight:normal;
+  font-style:normal;
+}
+*{
+  margin:0;
+  padding:0;
+}
+body, html{
+  height:100%;
+  width:100%
+}
+body{
+  margin-top:6vw;
+  background-color: #A7B1C0;
+  display: flex;
+  justify-content: center;
+}
+#mainContainer{
+  height:128vw;
+  width:90%;
+  padding-top:2vw;
+  padding-left:2vw;
+  padding-bottom:2vw;
+  padding-right:0vw;
+  background-color: #222222;
+  box-shadow: 0px 0px 5px black;
+}
+#imageContainer{
+  height:125vw;
+  width:95vw;
+  position:absolute;
+}
+#leftHandSide{
+  height:100%;
+  width:50%;
+  position:absolute;
+}
+#rightHandSide{
+  margin-left:45%;
+  height:125vw;
+  width:46vw;
+  display: flex;
+  flex-direction: column;
+  align-items:flex-end;
+}
+#InformationSectionTop{
+  margin-bottom:4vw;
+  width: 45vw;
+  height: auto;
+  display:block;
+}
+#InformationSectionBottom{
+  width: 45vw;
+  height: auto;
+  display:block;
+  position:relative;
+  z-index:1;
+  letter-spacing: .05vw;
+}
+#TitleSectionLeft{
+  margin-bottom:27vw;
+  width: 35vw;
+  height:auto;
+  display:block;
+  position:relative;
+  z-index:1;
+}
+#TitleSectionRightTop{
+  width: 100%;
+  text-align:right;
+  height: auto;
+  display:block;
+  letter-spacing: -.8vw;
+  text-indent:1vw;
+}
+#TitleSectionRightBottom{
+  margin-top:65vw;
+  width: 41.5vw;
+  height: auto;
+  position:relative;
+  z-index:1;
+}
+#footerSection{
+  margin-top:0vw;
+  background-image:url('footer.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position:relative;
+  height:2vw;
+  width:43vw;
+}
+.bkgimg{
+  margin-top:31vw;
+  z-index: 0;
+  right:8vw;
+  background-image: url("BlurredPerson.jpg");
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  position:absolute;
+  width:52vw;
+  height:70vw;
+}
+#InformationSectionTop p, #InformationSectionBottom p{
+  line-height:3.2vw;
+  font-family: SequelSans;
+  font-weight: normal;
+  font-style: normal;
+  font-size:3.6vw;
+  color:white;
+}
+#InformationSectionTop p:first-of-type{
+  text-indent: 0.2vw;
+}
+#TitleSectionLeft p:first-of-type{
+  text-indent:0.8vw;
+}
+#TitleSectionRightTop p:last-of-type{
+  text-indent: -2vw;
+}
+p{
+  line-height:13.5vw;
+  font-family: SequelSans;
+  font-style:oblique;
+  font-weight:lighter;
+  font-size:17.5vw;
+  color: white;
+}
+hr{
+  margin-left: 0px;
+  width:95%;
+  text-align: left;
+}
+#InformationSectionBottom span{
+  font-family: IntervalSansPro;
+  font-style:bold;
+  font-weight:oblique;
+  letter-spacing: -.3vw;
+  line-height: 1.8vw;
+  font-size:3.9vw;
+  color:white;
+}
+#TitleSectionRightTop span{
+  font-family: IntervalSansPro;
+  font-style:normal;
+  font-weight:normal;
+  letter-spacing: -2.5vw;
+  font-size:18.40vw;
+  color:white;
+}
